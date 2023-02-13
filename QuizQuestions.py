@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 import os
 
-channel_id = os.getenv("CHANNEL") # The channel id is an environment variable
+channel_id = int(os.getenv("CHANNEL")) # The channel id is an environment variable
 
 description = """Hey! I'm your learning assistant for Computational Intelligence
             and Machine Learning I. I will ask you different questions regarding
