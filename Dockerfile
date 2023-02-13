@@ -1,5 +1,5 @@
 FROM python:3.8
-WORKDIR .
-COPY . .
-RUN pip install -r requirements.py
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
 CMD ["python", "QuizQuestions.py"]
